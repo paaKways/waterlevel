@@ -46,13 +46,13 @@ export default {
         
         var n = val.toString()
         console.log('New value: ', n)
-        var new_data_y = this.data[0]['y']
+      /*   var new_data_y = this.data[0]['y']
         var new_data_x = this.data[0]['x']
 
-        new_data_y.push(parseInt(n))
-        new_data_x.push(this.i)
+        new_data_y.push(-1*parseInt(n))
+        new_data_x.push(this.i) */
 
-        var new_data = { x: this.i , y: parseInt(n)}
+        var new_data = { x: this.i , y: -1*parseInt(n)}
 
         this.updateValues(new_data)
     }
