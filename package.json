@@ -1,9 +1,9 @@
 {
   "name": "waterlevel",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
+  "description": "WaterLevel App",
   "productName": "WaterLevel App",
-  "cordovaId": "org.cordova.quasar.app",
+  "cordovaId": "org.cordova.waterlevel.app",
   "author": "Albert Mensah",
   "private": true,
   "scripts": {

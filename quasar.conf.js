@@ -29,7 +29,7 @@ module.exports = function (ctx) {
         cfg.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: 'ify-loader',
+          loader: 'eslint-loader',
           exclude: /node_modules/
         })
       }

@@ -1,6 +1,5 @@
 <template>
   <q-page class="flex flex-center">
-        <div id="chart"></div>
        <vue-plotly id="graph" :data="data" :layout="layout" :options="options" />
   </q-page>
 </template>
@@ -14,12 +13,12 @@ import VueMqtt from 'vue-mqtt'
 import VuePlotly from '@statnett/vue-plotly/dist/vue-plotly.js'
 
 const options = {
-  port: 35587,
-  username: 'uzyenhei',
-  password: 'otG6lNz-TTnx'
+  port: 32664,
+  username: 'zsezdcnq',
+  password: 'u_HDE8ZAVPNY'
 }
 
-Vue.use(VueMqtt, 'wss://m10.cloudmqtt.com', options)
+Vue.use(VueMqtt, 'wss://m24.cloudmqtt.com', options)
 
 
 export default {
@@ -29,24 +28,32 @@ export default {
   },
   data () {
       return {
-          data: [{ x: [1,3], y: [2,4] }],
+          i: 2,
+          data: [{ x: [0], y: [0] }],
           layout: {},
           options: {}
       }
   },
 
-  
+
   created: function () {
     this.$mqtt.subscribe('waterLevelValue', options)
     console.log('connected')
   },
   mqtt: {
     'waterLevelValue': function (val) {
+        
         var n = val.toString()
         console.log('New value: ', n)
-        var new_data = this.data[0]['y']
-        new_data.push(parseInt(n))
-        VuePlotly.update(new_data)
+        var new_data_y = this.data[0]['y']
+        var new_data_x = this.data[0]['x']
+
+        new_data_y.push(parseInt(n))
+        new_data_x.push(this.i)
+
+        var new_data = { x: this.i , y: parseInt(n)}
+
+        this.updateValues(new_data)
     }
   },
 
@@ -55,8 +62,14 @@ export default {
     getCurrentTime () {
         let today = new Date();
         return today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    },
+
+    updateValues (new_data) {
+        this.data[0]['x'].push( new_data['x'] )
+        this.data[0]['y'].push( new_data['y'] )
+        console.log(this.data)
+        this.i += 2
     }
- 
   }
 }
 </script>
