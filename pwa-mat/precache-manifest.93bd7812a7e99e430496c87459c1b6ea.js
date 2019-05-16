@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "cf6613d1adf490972c557a8e318e0868",
-    "url": "fonts/KFOlCnqEu92Fr1MmWUlfBBc-.cf6613d1.woff"
+    "revision": "8c2ade503b34e31430d6c98aa29a52a3",
+    "url": "fonts/KFOlCnqEu92Fr1MmYUtfBBc-.8c2ade50.woff"
   },
   {
-    "revision": "ad8a663309faefe871bd6fabac65cf88",
+    "revision": "c10c0e3366604ff2ae44df1a884326b8",
     "url": "index.html"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = [
     "url": "statics/icons/ship_icon.png"
   },
   {
-    "revision": "571da4d585e23b0c8854",
-    "url": "js/7990f602.c8f375b5.js"
+    "revision": "ed280f7b6e48ea30fa6e",
+    "url": "js/7990f602.5845f1d0.js"
   },
   {
     "revision": "3020c8ac2c2872dec7741e5948520093",
     "url": "statics/quasar-logo.png"
   },
   {
-    "revision": "d4b280b4bd1b1915043f",
-    "url": "js/app.2fef1a2a.js"
+    "revision": "4c53fbf21d0e5ebda224",
+    "url": "js/app.ce72382b.js"
   },
   {
     "revision": "66d7719a8ca03c1a591444c013802817",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "js/vendor.5e350034.js"
   },
   {
-    "revision": "a13b2bd5261e2df374128df1aab93001",
-    "url": "statics/icons/icon-512x512.png"
-  },
-  {
     "revision": "20c6420ccf16a07d9d56538e30a6b524",
     "url": "statics/icons/icon-256x256.png"
+  },
+  {
+    "revision": "a13b2bd5261e2df374128df1aab93001",
+    "url": "statics/icons/icon-512x512.png"
   },
   {
     "revision": "ed12d10fd0407eea42ccaf7af7991146",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "statics/icons/icon-128x128.png"
   },
   {
-    "revision": "e9dbbe8a693dd275c16d32feb101f1c1",
-    "url": "fonts/KFOkCnqEu92Fr1MmgVxIIzQ.e9dbbe8a.woff"
+    "revision": "de8b7431b74642e830af4d4f4b513ec9",
+    "url": "fonts/KFOlCnqEu92Fr1MmEU9fBBc-.de8b7431.woff"
   },
   {
     "revision": "c38ebd3cd38c98fbd16bf31d1d24ce64",
@@ -92,27 +92,27 @@ self.__precacheManifest = [
     "url": "fonts/KFOmCnqEu92Fr1Mu4mxM.bafb105b.woff"
   },
   {
-    "revision": "8c2ade503b34e31430d6c98aa29a52a3",
-    "url": "fonts/KFOlCnqEu92Fr1MmYUtfBBc-.8c2ade50.woff"
+    "revision": "cf6613d1adf490972c557a8e318e0868",
+    "url": "fonts/KFOlCnqEu92Fr1MmWUlfBBc-.cf6613d1.woff"
   },
   {
     "revision": "a1471d1d6431c893582a5f6a250db3f9",
     "url": "fonts/KFOlCnqEu92Fr1MmSU5fBBc-.a1471d1d.woff"
   },
   {
-    "revision": "de8b7431b74642e830af4d4f4b513ec9",
-    "url": "fonts/KFOlCnqEu92Fr1MmEU9fBBc-.de8b7431.woff"
+    "revision": "e9dbbe8a693dd275c16d32feb101f1c1",
+    "url": "fonts/KFOkCnqEu92Fr1MmgVxIIzQ.e9dbbe8a.woff"
   },
   {
     "revision": "5896d4fd26d70c5b4ae9",
     "url": "css/c5a63bb4.7576685f.css"
   },
   {
-    "revision": "d4b280b4bd1b1915043f",
+    "revision": "4c53fbf21d0e5ebda224",
     "url": "css/app.efc91b7c.css"
   },
   {
-    "revision": "571da4d585e23b0c8854",
+    "revision": "ed280f7b6e48ea30fa6e",
     "url": "css/7990f602.03cd5845.css"
   },
   {
