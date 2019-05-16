@@ -32,13 +32,12 @@
         inset-delimiter
       >
         <q-list-header>Menu</q-list-header>
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
+        <q-item to="/">
+          <q-item-main label="Home" />
         </q-item>
 
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
+        <q-item to="/about">
+          <q-item-main label="About" sublabel="creators of the app" />
         </q-item>
       </q-list>
     </q-layout-drawer>

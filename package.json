@@ -7,17 +7,20 @@
   "author": "Albert Mensah",
   "private": true,
   "scripts": {
+    "build": "quasar build -m pwa",
+    "build-ios-pwa": "quasar build -t ios -m pwa -c",
+    "build-mat-pwa": "quasar build -t mat -m pwa -c",
+    "deploy": "git subtree push — prefix dist heroku master",
     "lint": "eslint --ext .js,.vue src",
+    "start": "node server.js",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@statnett/vue-plotly": "^0.3.2",
     "axios": "^0.18.0",
-    "chart.js": "^2.8.0",
     "ify-loader": "^1.1.0",
     "plotly.js": "^1.47.4",
     "transform-loader": "^0.2.4",
-    "vue-chartjs": "^3.4.2",
     "vue-i18n": "^7.3.3",
     "vue-mqtt": "^2.0.3"
   },

@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex flex-center">
+      <h3>Water level time series plot</h3>
        <vue-plotly id="graph" :data="data" :layout="layout" :options="options" />
   </q-page>
 </template>
