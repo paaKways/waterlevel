@@ -10,9 +10,8 @@
     "build": "quasar build -m pwa",
     "build-ios-pwa": "quasar build -t ios -m pwa -c",
     "build-mat-pwa": "quasar build -t mat -m pwa -c",
-    "deploy": "git subtree push — prefix dist heroku master",
+    "deploy": "git subtree push --prefix dist heroku master",
     "lint": "eslint --ext .js,.vue src",
-    "start": "node server.js",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
