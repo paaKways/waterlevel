@@ -13,6 +13,12 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/About.vue') }, 
     ]
+  },{
+    path: '/level',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Level.vue') }, 
+    ]
   }
 ]
 

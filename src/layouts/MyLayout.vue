@@ -37,7 +37,11 @@
         </q-item>
 
         <q-item to="/about">
-          <q-item-main label="About" sublabel="creators of the app" />
+          <q-item-main label="About" sublabel="Creators of the app" />
+        </q-item>
+
+        <q-item to="/level">
+          <q-item-main label="Level" sublabel="See current depth" />
         </q-item>
       </q-list>
     </q-layout-drawer>

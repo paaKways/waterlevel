@@ -1,16 +1,22 @@
 <template>
   <q-page class="flex flex-center">
-      <h3>Water level time series plot</h3>
-       <vue-plotly id="graph" :data="data" :layout="layout" :options="options" />
+      <div class="pageinfo">
+        <h4>Water level time series plot</h4>
+        
+        <vue-plotly id="graph" :data="data" :layout="layout" :options="options" />
+      </div>  
+        
   </q-page>
 </template>
 
 <style>
+.pageinfo {
+  margin:0; padding: 0;
+  overflow-y: none;
+}
 </style>
 
 <script>
-import Vue from 'vue'
-import VueMqtt from 'vue-mqtt'
 import VuePlotly from '@statnett/vue-plotly/dist/vue-plotly.js'
 
 const options = {
@@ -18,9 +24,6 @@ const options = {
   username: 'zsezdcnq',
   password: 'u_HDE8ZAVPNY'
 }
-
-Vue.use(VueMqtt, 'wss://m24.cloudmqtt.com', options)
-
 
 export default {
   name: 'PageIndex',
@@ -32,7 +35,8 @@ export default {
           i: 2,
           data: [{ x: [0], y: [0] }],
           layout: {},
-          options: {}
+          options: {},
+          latest: 2,
       }
   },
 
@@ -46,11 +50,6 @@ export default {
         
         var n = val.toString()
         console.log('New value: ', n)
-      /*   var new_data_y = this.data[0]['y']
-        var new_data_x = this.data[0]['x']
-
-        new_data_y.push(-1*parseInt(n))
-        new_data_x.push(this.i) */
 
         var new_data = { x: this.i , y: -1*parseInt(n)}
 
@@ -70,6 +69,9 @@ export default {
         this.data[0]['y'].push( new_data['y'] )
         console.log(this.data)
         this.i += 2
+
+        this.data.latest = new_data['x']
+
     }
   }
 }
