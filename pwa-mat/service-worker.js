@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.f3ba331b423e4200ad54cbb4f523046f.js"
+  "precache-manifest.46b332e03067e0ef0011397f28848516.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "waterlevel"});
