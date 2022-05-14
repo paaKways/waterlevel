@@ -36,9 +36,9 @@
           <q-item-main label="Home" />
         </q-item>
 
-        <q-item to="/about">
+        <!--q-item to="/about">
           <q-item-main label="About" sublabel="Creators of the app" />
-        </q-item>
+        </q-item-->
 
         <q-item to="/level">
           <q-item-main label="Level" sublabel="See current depth" />
@@ -46,9 +46,12 @@
       </q-list>
     </q-layout-drawer>
 
-    <q-page-container>
+    <!--q-page-container>    
+    </q-page-container-->
+    
+    <div class="router-v">
       <router-view />
-    </q-page-container>
+    </div>
   </q-layout>
 </template>
 
@@ -69,4 +72,8 @@ export default {
 </script>
 
 <style>
+.router-v {
+  margin: 0;
+  padding: 0;
+}
 </style>

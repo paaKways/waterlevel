@@ -1,17 +1,19 @@
 <template>
-  <q-page class="flex flex-center">
+  <!-- <q-page class="flex flex-center"> -->
       <div class="pageinfo">
+    
         <h4>Water level time series plot</h4>
         
         <vue-plotly id="graph" :data="data" :layout="layout" :options="options" />
       </div>  
         
-  </q-page>
+  <!-- </q-page> -->
 </template>
 
 <style>
 .pageinfo {
-  margin:0; padding: 0;
+  margin:0 auto; padding: 30px;
+  width: 100vw;
   overflow-y: none;
 }
 </style>
