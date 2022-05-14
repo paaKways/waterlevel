@@ -9,12 +9,12 @@ import Vue from 'vue'
 import VueMqtt from 'vue-mqtt'
 
 const options = {
-  port: 32664,
-  username: 'zsezdcnq',
-  password: 'u_HDE8ZAVPNY'
+  port: 35587, //32664,
+  username: 'uzyenhei', //'zsezdcnq',
+  password: 'otG6lNz-TTnx' //'u_HDE8ZAVPNY'
 }
 
-Vue.use(VueMqtt, 'wss://m24.cloudmqtt.com', options)
+Vue.use(VueMqtt, 'wss://m10.cloudmqtt.com', options)
 
 
 export default {

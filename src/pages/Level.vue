@@ -18,7 +18,7 @@
 <script>
 
 const options = {
-  port: 15587, //32664,
+  port: 35587, //32664,
   username: 'uzyenhei', //'zsezdcnq',
   password: 'otG6lNz-TTnx' //'u_HDE8ZAVPNY'
 }
@@ -32,6 +32,7 @@ export default {
   },
 
   created: function () {
+    console.log('Connecting to MQTT server')
     this.$mqtt.subscribe('waterLevelValue', options)
     console.log('connected')
   },

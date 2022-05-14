@@ -22,9 +22,9 @@
 import VuePlotly from '@statnett/vue-plotly/dist/vue-plotly.js'
 
 const options = {
-  port: 32664,
-  username: 'zsezdcnq',
-  password: 'u_HDE8ZAVPNY'
+  port: 35587, //32664,
+  username: 'uzyenhei', //'zsezdcnq',
+  password: 'otG6lNz-TTnx' //'u_HDE8ZAVPNY'
 }
 
 export default {
