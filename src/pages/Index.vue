@@ -63,8 +63,7 @@ export default {
     console.log('connected')
   },
   mqtt: {
-    'waterLevelValue': function (val) {
-        
+    'waterLevelValue': function (val) {    
         var recv = JSON.parse(val) //.toString()
         var n = recv['levelcm']
        
@@ -73,11 +72,11 @@ export default {
 
         this.lat = lat
         this.long = long
-        this.latest = n
+        this.latest = n * 4.3
         
         console.log('New value: ', recv)
 
-        var new_data = { x: this.i , y: -1*parseInt(n)}
+        var new_data = { x: this.i , y: -1 * parseFloat(n) * 4.3 }
 
         this.updateValues(new_data)
     }

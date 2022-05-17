@@ -42,7 +42,7 @@ export default {
         var n = JSON.parse(val) //.toString()
         console.log('New value: ', n)
         var level = n['levelcm']
-        this.latest = level
+        this.latest = parseFloat(level) * 4.3
 
     }
   },
