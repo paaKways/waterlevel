@@ -75,7 +75,7 @@ export default {
         this.long = long
         this.latest = n
         
-        console.log('New value: ', n)
+        console.log('New value: ', recv)
 
         var new_data = { x: this.i , y: -1*parseInt(n)}
 

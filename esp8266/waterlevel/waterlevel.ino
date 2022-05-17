@@ -13,7 +13,7 @@ HCSR04 hc(13, 12); // Initialize Pin D7, D6
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-SoftwareSerial gpsSerial(3,2);
+SoftwareSerial gpsSerial(0,4); // D3, D2
 TinyGPS gps;
 
 /*
