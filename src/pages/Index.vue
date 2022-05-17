@@ -5,6 +5,14 @@
         <h4>Water level time series plot</h4>
         
         <vue-plotly id="graph" :data="data" :layout="layout" :options="options" />
+        
+
+        <h4>GPS Data</h4>
+        <p>Latitude: {{this.lat}}</p>
+        <p>Longitude: {{this.long}}</p>
+
+        <h4>Depth</h4>
+        <p>Level in cm: {{this.latest}}</p>
       </div>  
         
   <!-- </q-page> -->
@@ -12,7 +20,8 @@
 
 <style>
 .pageinfo {
-  margin:0 auto; padding: 30px;
+  margin:0 auto; padding-top: 30px;
+  padding-left: 10px;
   width: 100vw;
   overflow-y: none;
 }
@@ -20,6 +29,10 @@
 
 <script>
 import VuePlotly from '@statnett/vue-plotly/dist/vue-plotly.js'
+
+// import geocoder from 'offline-geocoder';
+// const g = geocoder({database: 'data/geodata.db'})
+// const geocoder = require('offline-geocoder')({ database: 'data/geodata.db' })
 
 const options = {
   port: 35587, //32664,
@@ -36,6 +49,8 @@ export default {
       return {
           i: 2,
           data: [{ x: [0], y: [0] }],
+          long: 0.0,
+          lat: 0.0,
           layout: {},
           options: {},
           latest: 2,
@@ -50,7 +65,16 @@ export default {
   mqtt: {
     'waterLevelValue': function (val) {
         
-        var n = val.toString()
+        var recv = JSON.parse(val) //.toString()
+        var n = recv['levelcm']
+       
+        var long = recv['long']
+        var lat = recv['lat']
+
+        this.lat = lat
+        this.long = long
+        this.latest = n
+        
         console.log('New value: ', n)
 
         var new_data = { x: this.i , y: -1*parseInt(n)}

@@ -17,8 +17,10 @@
   },
   "dependencies": {
     "@statnett/vue-plotly": "^0.3.2",
+    "aws-sdk": "^2.1135.0",
     "axios": "^0.18.0",
     "ify-loader": "^1.1.0",
+    "offline-geocoder": "^1.0.0",
     "plotly.js": "^1.47.4",
     "transform-loader": "^0.2.4",
     "vue-i18n": "^7.3.3",

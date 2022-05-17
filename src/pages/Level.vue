@@ -39,10 +39,10 @@ export default {
   mqtt: {
     'waterLevelValue': function (val) {
         
-        var n = val.toString()
+        var n = JSON.parse(val) //.toString()
         console.log('New value: ', n)
-
-        this.data.latest = parseInt(n)
+        var level = n['levelcm']
+        this.latest = level
 
     }
   },
