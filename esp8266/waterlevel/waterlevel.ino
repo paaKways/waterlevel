@@ -2,17 +2,19 @@
 * ESP based Internet of Things starter template 
 * https://github.com/paaKways/waterlevel/blob/timothy/esp8266/sketch.ino
 */
-#include <HCSR04.h>
+//#include <HCSR04.h>
 #include <PubSubClient.h>
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 #include <TinyGPS.h>
 #include <SoftwareSerial.h>
 
-HCSR04 hc(13, 12); // Initialize Pin D7, D6
+//HCSR04 hc(13, 12); // Initialize Pin D7, D6
+#define trigPin 13;
+#define echoPin 12;
+
 WiFiClient espClient;
 PubSubClient client(espClient);
-
 SoftwareSerial gpsSerial(0,4); // D3, D2
 TinyGPS gps;
 
@@ -27,6 +29,9 @@ const char* mqtt_user = "uzyenhei";
 const char* mqtt_pass = "otG6lNz-TTnx";
 
 float latit = 5.6078,longit = -0.0598;
+long duration;
+int distance;
+
 void setup() 
 { 
   Serial.begin(115200);
@@ -37,6 +42,9 @@ void setup()
   
   //Rest of the setup code goes here
   gpsSerial.begin(115200);
+
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
 }
 
 // the loop function runs over and over again forever
@@ -45,6 +53,7 @@ void loop()
   StaticJsonDocument<300> JSONdoc;
 
   // Extract Sensor data here
+  // GPS data
   while(gpsSerial.available()){
     if(gps.encode(gpsSerial.read()))
      { 
@@ -53,14 +62,23 @@ void loop()
   }
   String latitude = String(latit, 6);
   String longitude = String(longit, 6);
-  
+
+  //Waterproof Ultrasonic
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(5);
+
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  // Read echoPin.
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration*0.034/2;
   
   // End - Extract sensor data
 
-  
   // Package for sending
-  JSONdoc["levelcm"] = hc.dist();
-
+  JSONdoc["levelcm"] = distance; //hc.dist();
   JSONdoc["lat"] = latitude;
   JSONdoc["long"] = longitude;
 

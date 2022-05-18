@@ -10,9 +10,11 @@
         <h4>GPS Data</h4>
         <p>Latitude: {{this.lat}}</p>
         <p>Longitude: {{this.long}}</p>
+        <p>Current time: {{ new Date(new Date().toISOString()).toString() }}</p>
 
         <h4>Depth</h4>
-        <p>Level in cm: {{this.latest}}</p>
+        <p>Level in cm (in air, calculated using speed of sound in air): {{this.latest}} cm</p>
+         <p>Level in cm (in water, calculated using speed of sound in water): {{this.latest * 4.314}} cm</p>
       </div>  
         
   <!-- </q-page> -->
@@ -72,11 +74,11 @@ export default {
 
         this.lat = lat
         this.long = long
-        this.latest = n * 4.3
+        this.latest = n
         
         console.log('New value: ', recv)
 
-        var new_data = { x: this.i , y: -1 * parseFloat(n) * 4.3 }
+        var new_data = { x: this.i , y: -1 * parseFloat(n) }
 
         this.updateValues(new_data)
     }

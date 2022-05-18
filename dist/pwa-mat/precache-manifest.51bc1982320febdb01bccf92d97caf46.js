@@ -20,20 +20,20 @@ self.__precacheManifest = [
     "url": "js/4b47640d.cb798a0e.js"
   },
   {
-    "revision": "7d27d1bef1cb6b4f41a3",
+    "revision": "24380fe75f245e297e02",
     "url": "css/7945d368.51f8262f.css"
   },
   {
-    "revision": "7d27d1bef1cb6b4f41a3",
-    "url": "js/7945d368.bb966440.js"
+    "revision": "24380fe75f245e297e02",
+    "url": "js/7945d368.bd6c92d1.js"
   },
   {
-    "revision": "dbc3824376820ae48209",
+    "revision": "9c6ea1f5197b8beae94c",
     "url": "css/app.a86c758f.css"
   },
   {
-    "revision": "dbc3824376820ae48209",
-    "url": "js/app.72d47b0e.js"
+    "revision": "9c6ea1f5197b8beae94c",
+    "url": "js/app.031d33a4.js"
   },
   {
     "revision": "456e32b9951e9a80d245",
@@ -48,16 +48,16 @@ self.__precacheManifest = [
     "url": "fonts/KFOlCnqEu92Fr1MmSU5fBBc-.a1471d1d.woff"
   },
   {
-    "revision": "bafb105baeb22d965c70fe52ba6b49d9",
-    "url": "fonts/KFOmCnqEu92Fr1Mu4mxM.bafb105b.woff"
+    "revision": "cf6613d1adf490972c557a8e318e0868",
+    "url": "fonts/KFOlCnqEu92Fr1MmWUlfBBc-.cf6613d1.woff"
   },
   {
     "revision": "de8b7431b74642e830af4d4f4b513ec9",
     "url": "fonts/KFOlCnqEu92Fr1MmEU9fBBc-.de8b7431.woff"
   },
   {
-    "revision": "cf6613d1adf490972c557a8e318e0868",
-    "url": "fonts/KFOlCnqEu92Fr1MmWUlfBBc-.cf6613d1.woff"
+    "revision": "bafb105baeb22d965c70fe52ba6b49d9",
+    "url": "fonts/KFOmCnqEu92Fr1Mu4mxM.bafb105b.woff"
   },
   {
     "revision": "8c2ade503b34e31430d6c98aa29a52a3",
@@ -72,16 +72,12 @@ self.__precacheManifest = [
     "url": "fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.c38ebd3c.woff"
   },
   {
-    "revision": "8c4120b4e88276badbc808e518572fad",
-    "url": "statics/icons/icon-192x192.png"
-  },
-  {
-    "revision": "2f9d7587924933c1912c342b190b53ca",
-    "url": "statics/icons/favicon-32x32.png"
-  },
-  {
     "revision": "efb00e57304380d857603760600da5d5",
     "url": "statics/icons/favicon-16x16.png"
+  },
+  {
+    "revision": "8c4120b4e88276badbc808e518572fad",
+    "url": "statics/icons/icon-192x192.png"
   },
   {
     "revision": "3020c8ac2c2872dec7741e5948520093",
@@ -112,11 +108,15 @@ self.__precacheManifest = [
     "url": "statics/icons/ship_icon.png"
   },
   {
+    "revision": "2f9d7587924933c1912c342b190b53ca",
+    "url": "statics/icons/favicon-32x32.png"
+  },
+  {
     "revision": "3020c8ac2c2872dec7741e5948520093",
     "url": "statics/quasar-logo.png"
   },
   {
-    "revision": "f15b6e51a7c489df4839a09d98a80475",
+    "revision": "1073e0e95063069ec25c57400be3f56f",
     "url": "index.html"
   }
 ];
