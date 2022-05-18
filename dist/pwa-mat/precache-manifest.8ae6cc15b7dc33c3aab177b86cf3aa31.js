@@ -20,48 +20,48 @@ self.__precacheManifest = [
     "url": "js/4b47640d.cb798a0e.js"
   },
   {
-    "revision": "24380fe75f245e297e02",
+    "revision": "6783c9df8a03e4cf1b01",
     "url": "css/7945d368.51f8262f.css"
   },
   {
-    "revision": "24380fe75f245e297e02",
-    "url": "js/7945d368.bd6c92d1.js"
+    "revision": "6783c9df8a03e4cf1b01",
+    "url": "js/7945d368.c9d2fc37.js"
   },
   {
-    "revision": "9c6ea1f5197b8beae94c",
+    "revision": "b27bf774f6b2d091a089",
     "url": "css/app.a86c758f.css"
   },
   {
-    "revision": "9c6ea1f5197b8beae94c",
-    "url": "js/app.031d33a4.js"
+    "revision": "b27bf774f6b2d091a089",
+    "url": "js/app.94552ba1.js"
   },
   {
     "revision": "456e32b9951e9a80d245",
     "url": "js/vendor.05858a46.js"
   },
   {
-    "revision": "e9dbbe8a693dd275c16d32feb101f1c1",
-    "url": "fonts/KFOkCnqEu92Fr1MmgVxIIzQ.e9dbbe8a.woff"
-  },
-  {
     "revision": "a1471d1d6431c893582a5f6a250db3f9",
     "url": "fonts/KFOlCnqEu92Fr1MmSU5fBBc-.a1471d1d.woff"
-  },
-  {
-    "revision": "cf6613d1adf490972c557a8e318e0868",
-    "url": "fonts/KFOlCnqEu92Fr1MmWUlfBBc-.cf6613d1.woff"
-  },
-  {
-    "revision": "de8b7431b74642e830af4d4f4b513ec9",
-    "url": "fonts/KFOlCnqEu92Fr1MmEU9fBBc-.de8b7431.woff"
   },
   {
     "revision": "bafb105baeb22d965c70fe52ba6b49d9",
     "url": "fonts/KFOmCnqEu92Fr1Mu4mxM.bafb105b.woff"
   },
   {
+    "revision": "e9dbbe8a693dd275c16d32feb101f1c1",
+    "url": "fonts/KFOkCnqEu92Fr1MmgVxIIzQ.e9dbbe8a.woff"
+  },
+  {
+    "revision": "de8b7431b74642e830af4d4f4b513ec9",
+    "url": "fonts/KFOlCnqEu92Fr1MmEU9fBBc-.de8b7431.woff"
+  },
+  {
     "revision": "8c2ade503b34e31430d6c98aa29a52a3",
     "url": "fonts/KFOlCnqEu92Fr1MmYUtfBBc-.8c2ade50.woff"
+  },
+  {
+    "revision": "cf6613d1adf490972c557a8e318e0868",
+    "url": "fonts/KFOlCnqEu92Fr1MmWUlfBBc-.cf6613d1.woff"
   },
   {
     "revision": "8a9a261c8b8dfe90db11f1817a9d22e1",
@@ -80,12 +80,16 @@ self.__precacheManifest = [
     "url": "statics/icons/icon-192x192.png"
   },
   {
+    "revision": "da2b422e2895b9b9c1782a71b6be9d63",
+    "url": "statics/icons/apple-icon-152x152.png"
+  },
+  {
     "revision": "3020c8ac2c2872dec7741e5948520093",
     "url": "statics/icons/icon-128x128.png"
   },
   {
-    "revision": "da2b422e2895b9b9c1782a71b6be9d63",
-    "url": "statics/icons/apple-icon-152x152.png"
+    "revision": "2f9d7587924933c1912c342b190b53ca",
+    "url": "statics/icons/favicon-32x32.png"
   },
   {
     "revision": "66d7719a8ca03c1a591444c013802817",
@@ -96,27 +100,23 @@ self.__precacheManifest = [
     "url": "statics/icons/icon-256x256.png"
   },
   {
-    "revision": "ed12d10fd0407eea42ccaf7af7991146",
-    "url": "statics/icons/ms-icon-144x144.png"
-  },
-  {
     "revision": "a13b2bd5261e2df374128df1aab93001",
     "url": "statics/icons/icon-512x512.png"
   },
   {
-    "revision": "2f4227dd1063b3418c486a2836c07599",
-    "url": "statics/icons/ship_icon.png"
-  },
-  {
-    "revision": "2f9d7587924933c1912c342b190b53ca",
-    "url": "statics/icons/favicon-32x32.png"
+    "revision": "ed12d10fd0407eea42ccaf7af7991146",
+    "url": "statics/icons/ms-icon-144x144.png"
   },
   {
     "revision": "3020c8ac2c2872dec7741e5948520093",
     "url": "statics/quasar-logo.png"
   },
   {
-    "revision": "1073e0e95063069ec25c57400be3f56f",
+    "revision": "2f4227dd1063b3418c486a2836c07599",
+    "url": "statics/icons/ship_icon.png"
+  },
+  {
+    "revision": "9261a7bd0e7a5d1ced425ec613a7a2a1",
     "url": "index.html"
   }
 ];
